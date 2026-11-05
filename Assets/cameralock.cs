@@ -2,12 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class cubemechanic : MonoBehaviour
+public class cameralock : MonoBehaviour
 {
     // Start is called before the first frame update
-    void OnTriggerEnter(Colider other)
+    void Start()
     {
-        if (other.Comparetag("player"))
+        transform.eulerAngles = new Vector3(30, 0, 0);
         
     }
 
